@@ -7,6 +7,7 @@
         @csrf 
         @method('PUT')
         <table>
+            
             <tr>
                 <td>
                     <label for="namaAlbum">Nama Album</label>
@@ -15,6 +16,7 @@
                     <input type="text" name="namaAlbum" value="{{ $album->namaAlbum}}" required>
                 </td>
             </tr>
+
             <tr>
                 <td>
                     <label for="deskripsi">Deskripsi Album</label>
@@ -23,11 +25,13 @@
                     <textarea name="deskripsi" maxlength="150">{{ $album->deskripsi }}</textarea>
                 </td>
             </tr>
-            <tr>
+
+            <tr>               
                 <td colspan="2" style="text-align: right;">
                     <button type="submit">Update Album</button>
                 </td>
             </tr>
+
         </table>
     </form>
 </div>
